@@ -1,0 +1,32 @@
+[project]
+name = "python-template"
+version = "0.0.1"
+description = "Python project template based on PDM management"
+authors = [
+    {name = "aetherrootr", email = "aether@aetherrootr.com"},
+]
+dependencies = ["click>=8.1.8", "pathspec>=0.12.1", "shiv>=1.0.8"]
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+# Add modules that need to be packaged during build
+[tool.pdm.build]
+includes = [
+]
+
+[tool.ruff]
+respect-gitignore = true
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.4",
+    "mypy>=1.14.0",
+]
