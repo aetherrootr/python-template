@@ -5,7 +5,7 @@ description = "Python project template based on PDM management"
 authors = [
     {name = "aetherrootr", email = "aether@aetherrootr.com"},
 ]
-dependencies = ["click>=8.1.8", "pathspec>=0.12.1", "shiv>=1.0.8"]
+dependencies = ["click>=8.1.8", "pathspec>=0.12.1"]
 requires-python = ">=3.13"
 readme = "README.md"
 license = {text = "MIT"}
@@ -29,4 +29,6 @@ respect-gitignore = true
 dev = [
     "ruff>=0.8.4",
     "mypy>=1.14.0",
+    "shiv>=1.0.8",
+    "tox>=4.23.2",
 ]
